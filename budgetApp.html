@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="w3schools.css">
+    <script src="budgetapp.js"></script>
+    <style>
+        #values{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 100%; padding: 7%;" class="w3-container w3-center w3-green" id="container">
+        <h1>AmountLeft</h1>
+        <h1 id="balance"></h1>
+    </div>
+    <center>
+    <div style="padding:7%;" id="values">
+        
+        <table>
+            <tr>
+                <td><label for="currency">Currency</label></td>
+                <td><input id='currency' name="Currency" type=""></td>
+            </tr>
+            <tr>
+                <td><label for="totalSalary">Total Salary</label></td>
+                <td><input id='totalSalary' name="totalSalary" type="number"></td>
+            </tr>
+            <tr>
+            <td> <label for="expenses">Expenses</label></td>
+            <td> <input id="expenses" name="expenses" type="number"></td>
+            </tr>
+            <tr>
+            <td><label for="taxes">Taxes</label></td>
+            <td> <input id="taxes" name='taxes' type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="savings">Savings</label></td>
+                <td><input id="savings" name='savings' type="number"></td>
+            </tr>
+        </table>
+        <button class="w3-btn w3-green w3-ripple" id="button" onclick="myFunction()" >Calculate</button>
+    </div>  
+    </center>
+</body>
+</html>
